@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    
+}
+
+nav{
+    background-color: #0F0A34;
+    color:white;
+    height:60px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul{
+    list-style: none;
+}
+
+.head{
+    width: 100vw;
+    height: 50vh;
+}
+.whole{
+    background-image: linear-gradient(to left bottom, #0f0a34, #383256, #625c7b, #8e89a1, #bdbac8, #cbc8d9, #dad6ea, #e8e5fb, #d7d2f8, #c6bff4, #b4acf0, #a399ec);
+    height: 100vh;
+   
+}
+.gameContainer{
+   
+    display: flex;
+    justify-content: center;
+    /* margin-top: 40px; */
+   
+}
+
+.Container{
+    
+    display:grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    margin-top: 70px;
+}
+
+.box{
+    border: 1.5px solid black;
+    font-size:8vw;
+    /* text-align: center; */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.box:hover{
+    background-color:#DEF5F9;
+}
+
+.boxtext{
+    color:#254082;
+}
+.info{
+    font-size: 22px;
+}
+.gameInfo{
+    padding: 0 34px;
+    margin-top: 70px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.gameInfo h1{
+    font-size: 2.5rem;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.bl-0{
+    border-left:0 ;
+}
+.br-0{
+    border-right:0 ;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bt-0{
+    border-top:0;
+}
+
+#reset{
+    margin: 0 23px;
+    padding: 1px 18px;
+    background: #84f0f9;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.line{
+    
+    height: 3px;
+    width: 0vw;
+    position: absolute;
+    background-color:#00B1B6;
+    transition: width 1s ease-in-out;
+}
+@media screen and (max-width: 950px)
+{
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .Container {
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3,20vw);
+    }
+    
+    
+}
